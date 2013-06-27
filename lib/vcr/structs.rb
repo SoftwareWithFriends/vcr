@@ -61,9 +61,9 @@ module VCR
       def initialize(*args)
         super
 
-        if body && !body.is_a?(String)
-          raise ArgumentError, "#{self.class} initialized with an invalid body: #{body.inspect}."
-        end
+        #if body && !body.is_a?(String)
+        #  raise ArgumentError, "#{self.class} initialized with an invalid body: #{body.inspect}."
+        #end
 
         # Ensure that the body is a raw string, in case the string instance
         # has been subclassed or extended with additional instance variables
